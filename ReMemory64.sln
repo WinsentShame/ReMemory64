@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37111.16 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReMemory64", "ReMemory64\ReMemory64.csproj", "{9B621AAC-45A1-47E0-A0D5-B6ED2F04FE3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rekit", "Rekit\Rekit.csproj", "{656AFDE6-4294-4248-BD4E-41CD25DF1332}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B621AAC-45A1-47E0-A0D5-B6ED2F04FE3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B621AAC-45A1-47E0-A0D5-B6ED2F04FE3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B621AAC-45A1-47E0-A0D5-B6ED2F04FE3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B621AAC-45A1-47E0-A0D5-B6ED2F04FE3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{656AFDE6-4294-4248-BD4E-41CD25DF1332}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{656AFDE6-4294-4248-BD4E-41CD25DF1332}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{656AFDE6-4294-4248-BD4E-41CD25DF1332}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{656AFDE6-4294-4248-BD4E-41CD25DF1332}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B420227-7F3D-456F-84F5-CC23013EAD77}
+	EndGlobalSection
+EndGlobal
