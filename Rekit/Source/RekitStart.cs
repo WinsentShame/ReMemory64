@@ -3,7 +3,7 @@ using System;
 
 namespace Rekit
 {
-    class Program_Main
+    class RekitStart
     {
         static void Main(string[] args)
         {
@@ -16,7 +16,7 @@ namespace Rekit
                 return;
             }
 
-            var localPlayer = new Local_Player(memory);
+            var localPlayer = new LocalPlayer(memory);
             bool localPlayerIsTrue = localPlayer.IsTrue();
             Console.WriteLine($"Address valid: {localPlayerIsTrue}");
 

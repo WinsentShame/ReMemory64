@@ -48,12 +48,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Source\Configs\Config.cs" />
-    <Compile Include="Source\Program_Main.cs" />
+    <Compile Include="Source\RekitStart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Source\SDK\Structs\Local_Player.cs" />
+    <Compile Include="Source\SDK\Structures\Player\ArmorItem\Boots.cs" />
+    <Compile Include="Source\SDK\Structures\Player\ArmorItem\Chesplace.cs" />
+    <Compile Include="Source\SDK\Structures\Player\ArmorItem\Helmet.cs" />
+    <Compile Include="Source\SDK\Structures\Player\ArmorItem\Leggins.cs" />
+    <Compile Include="Source\SDK\Structures\Player\Item.cs" />
+    <Compile Include="Source\SDK\Structures\Player\LocalPlayer.cs" />
+    <Compile Include="Source\SDK\Structures\Other\MinecraftGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Source\SDK\Addresses\" />
+    <Folder Include="Source\SDK\NewFolder1\" />
+    <Folder Include="Source\SDK\Structures\Modulars\" />
+    <Folder Include="Source\SDK\Structures\Player\Inventory\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
