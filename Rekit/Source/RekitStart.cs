@@ -1,5 +1,6 @@
 ﻿using ReMemory64;
 using System;
+using System.Runtime.InteropServices;
 
 namespace Rekit
 {
@@ -7,7 +8,6 @@ namespace Rekit
     {
         static void Main(string[] args)
         {
-
             var memory = new BaseMemory();
 
             if (!memory.OpenProcess("Minecraft.Windows.exe"))
@@ -18,17 +18,29 @@ namespace Rekit
 
             var localPlayer = new LocalPlayer(memory);
             bool localPlayerIsTrue = localPlayer.IsTrue();
-            Console.WriteLine($"Address valid: {localPlayerIsTrue}");
+            Console.WriteLine($"LocalPlayer: {localPlayerIsTrue}");
 
-            if (localPlayerIsTrue)
+            if (!localPlayerIsTrue)
             {
-                IntPtr playerBase = localPlayer.BaseDefault;
-
-                int velocityY = memory.ReadValue<int>(playerBase + 0x30);
-                float health = memory.ReadValue<float>(playerBase + 0x100);
-
-                Console.WriteLine($"Velocity Y: {velocityY}, Health: {health}");
+                Console.WriteLine("LocalPlayer not valid.");
+                memory.CloseProcess();
+                return;
             }
+
+            var currentItem = localPlayer.GetCurrentItem();
+            if (currentItem == null)
+            {
+                Console.WriteLine("CurrentItem pointer is null.");
+                memory.CloseProcess();
+                return;
+            }
+
+            Console.WriteLine($"CurrentItem: {currentItem.IsTrue()}");
+
+            IntPtr itemBase = currentItem.BaseDefault;
+            byte slotStack = memory.ReadValue<byte>(itemBase + 0x08);
+            Console.WriteLine($"Slot Stack: {slotStack}");
+
             memory.CloseProcess();
         }
 

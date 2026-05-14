@@ -295,5 +295,7 @@ namespace Rekit
             /// </summary>
             currentSlot = 0x16B8,
         }
+
+        public Item GetCurrentItem() => ReadPointerStruct<Item>(0x1678);
     }
 }

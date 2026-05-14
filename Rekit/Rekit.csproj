@@ -54,8 +54,7 @@
     <Compile Include="Source\SDK\Structures\Player\ArmorItem\Chesplace.cs" />
     <Compile Include="Source\SDK\Structures\Player\ArmorItem\Helmet.cs" />
     <Compile Include="Source\SDK\Structures\Player\ArmorItem\Leggins.cs" />
-    <Compile Include="Source\SDK\Structures\Player\Inventory\PlayerInventoryProxy.cs" />
-    <Compile Include="Source\SDK\Structures\Player\Item.cs" />
+    <Compile Include="Source\SDK\Structures\Player\DoubleStructures\Item.cs" />
     <Compile Include="Source\SDK\Structures\Player\LocalPlayer.cs" />
   </ItemGroup>
   <ItemGroup>

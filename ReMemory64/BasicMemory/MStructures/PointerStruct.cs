@@ -8,8 +8,27 @@ namespace ReMemory64
         protected IntPtr baseAddress;
         protected int[] baseOffsets;
 
-        public PointerStruct(BaseMemory memory) =>
+        protected T ReadPointerStruct<T>(int offset) where T : PointerStruct
+        {
+            if (!IsTrue()) return null;
+            try
+            {
+                long ptrValue = baseMemory.ReadValue<long>(BaseDefault + offset);
+                if (ptrValue == 0) return null;
+                return (T)Activator.CreateInstance(typeof(T), baseMemory, new IntPtr(ptrValue));
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        public PointerStruct(BaseMemory memory, IntPtr absoluteAddress)
+        {
             baseMemory = memory ?? throw new ArgumentNullException(nameof(memory));
+            baseAddress = absoluteAddress;
+            baseOffsets = Array.Empty<int>();
+        }
 
         public PointerStruct(BaseMemory memory, int baseOffset, int[] offsets)
         {
