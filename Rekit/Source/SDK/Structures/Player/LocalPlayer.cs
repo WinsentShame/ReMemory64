@@ -2,15 +2,14 @@
 
 namespace Rekit
 {
-    public class LocalPlayer : Memory_Struct
+    public class LocalPlayer : MemoryStruct
     {
         private static readonly int lpBaseAddress = 0x01921DF8;
         private static readonly int[] lpBaseOffsets = { 0x30, 0x30, 0x0, 0x58, 0x18, 0x0, 0x0 };
-        public LocalPlayer(Base_Memory memory)
+        public LocalPlayer(BaseMemory memory)
             : base(memory, lpBaseAddress, lpBaseOffsets) { }
         public enum Offsets : int
         {
-
             /// <summary>
             /// float
             /// </summary>

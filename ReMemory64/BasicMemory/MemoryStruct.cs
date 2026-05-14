@@ -2,18 +2,15 @@
 
 namespace ReMemory64
 {
-    public abstract class Memory_Struct
+    public abstract class MemoryStruct
     {
-        protected Base_Memory baseMemory;
+        protected BaseMemory baseMemory;
         protected IntPtr baseAddress;
         protected int[] baseOffsets;
 
-        public Memory_Struct(Base_Memory memory)
-        {
-            baseMemory = memory ?? throw new ArgumentNullException(nameof(memory));
-        }
+        public MemoryStruct(BaseMemory memory) => baseMemory = memory ?? throw new ArgumentNullException(nameof(memory)); 
 
-        public Memory_Struct(Base_Memory memory, int baseOffset, int[] offsets)
+        public MemoryStruct(BaseMemory memory, int baseOffset, int[] offsets)
         {
             baseMemory = memory ?? throw new ArgumentNullException(nameof(memory));
             baseOffsets = offsets ?? throw new ArgumentNullException(nameof(offsets));

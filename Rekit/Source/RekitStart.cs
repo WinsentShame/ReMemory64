@@ -8,7 +8,7 @@ namespace Rekit
         static void Main(string[] args)
         {
 
-            var memory = new Base_Memory();
+            var memory = new BaseMemory();
 
             if (!memory.OpenProcess("Minecraft.Windows.exe"))
             {

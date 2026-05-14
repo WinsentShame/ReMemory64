@@ -7,7 +7,7 @@ namespace Rekit
 
         public class Other
         {
-            public static Base_Memory memory = new Base_Memory();
+            public static BaseMemory memory = new BaseMemory();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace ReMemory64
 {
-    class Hook_Function
+    class HookFunction
     {
 
     }

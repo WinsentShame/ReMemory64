@@ -6,7 +6,7 @@ using static ReMemory64.WinApi;
 
 namespace ReMemory64
 {
-    public class Base_Memory : IDisposable
+    public class BaseMemory : IDisposable
     {
         private IntPtr processHandle;
         private Process targetProcess;

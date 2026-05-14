@@ -42,9 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BasicMemory\Base_Memory.cs" />
-    <Compile Include="BasicMemory\Memory_Struct.cs" />
-    <Compile Include="Hook_Function.cs" />
+    <Compile Include="BasicMemory\BaseMemory.cs" />
+    <Compile Include="BasicMemory\MemoryStruct.cs" />
+    <Compile Include="HookFunction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WinApi.cs" />
   </ItemGroup>
