@@ -1,6 +1,0 @@
-﻿namespace Rekit
-{
-    class Packet
-    {
-    }
-}
