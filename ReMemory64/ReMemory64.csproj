@@ -42,8 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BasicMemory\MStructures\AddressStruct.cs" />
     <Compile Include="BasicMemory\BaseMemory.cs" />
-    <Compile Include="BasicMemory\MemoryStruct.cs" />
+    <Compile Include="BasicMemory\MStructures\MemoryStruct.cs" />
     <Compile Include="HookFunction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WinApi.cs" />
