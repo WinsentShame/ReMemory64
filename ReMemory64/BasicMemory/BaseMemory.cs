@@ -121,6 +121,13 @@ namespace ReMemory64
             return buffer;
         }
 
+        public void WriteBytes(IntPtr address, byte[] buffer)
+        {
+            WriteProcessMemory(processHandle, address, buffer, (uint)buffer.Length, out IntPtr bytesWritten);
+            if (bytesWritten.ToInt64() != buffer.Length)
+                throw new Exception($"Failed to write {buffer.Length} bytes at address 0x{address.ToInt64():X}.");
+        }
+
         public void Dispose()
         {
             CloseProcess();

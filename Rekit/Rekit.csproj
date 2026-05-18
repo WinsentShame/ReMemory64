@@ -50,19 +50,21 @@
     <Compile Include="Source\Configs\Config.cs" />
     <Compile Include="Source\RekitStart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Source\SDK\Structures\Player\ArmorItem\Boots.cs" />
-    <Compile Include="Source\SDK\Structures\Player\ArmorItem\Chesplace.cs" />
-    <Compile Include="Source\SDK\Structures\Player\ArmorItem\Helmet.cs" />
-    <Compile Include="Source\SDK\Structures\Player\ArmorItem\Leggins.cs" />
-    <Compile Include="Source\SDK\Structures\Player\DoubleStructures\Item.cs" />
-    <Compile Include="Source\SDK\Structures\Player\LocalPlayer.cs" />
+    <Compile Include="Source\SDK\Enums\EntityID.cs" />
+    <Compile Include="Source\SDK\Modules\JumpDelay.cs" />
+    <Compile Include="Source\SDK\PointerStructures\Player\Double\ArmorItem\Boots.cs" />
+    <Compile Include="Source\SDK\PointerStructures\Player\Double\ArmorItem\Chesplace.cs" />
+    <Compile Include="Source\SDK\PointerStructures\Player\Double\ArmorItem\Helmet.cs" />
+    <Compile Include="Source\SDK\PointerStructures\Player\Double\ArmorItem\Leggins.cs" />
+    <Compile Include="Source\SDK\PointerStructures\Player\Double\WeaponItem\Item.cs" />
+    <Compile Include="Source\SDK\PointerStructures\Player\LocalPlayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Source\SDK\Addresses\" />
-    <Folder Include="Source\SDK\Structures\Modulars\" />
+    <Folder Include="Source\Menu\Draw\" />
+    <Folder Include="Source\Menu\Utils\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,6 +1,5 @@
 ﻿using ReMemory64;
 using System;
-using System.Runtime.InteropServices;
 
 namespace Rekit
 {
