@@ -2,6 +2,6 @@
 {
     class HookFunction
     {
-
+        // TODO: ZERO
     }
 }

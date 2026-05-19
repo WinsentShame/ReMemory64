@@ -8,7 +8,7 @@ namespace Rekit
         public Item(BaseMemory memory, IntPtr absoluteAddress) 
             : base(memory, absoluteAddress) { }
 
-        public enum Offset : int
+        private enum Offset : int
         {
             /// <summary>
             /// 4 bytes

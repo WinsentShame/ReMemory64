@@ -1,0 +1,6 @@
+﻿namespace Rekit
+{
+    class PlayerInventoryProxy
+    {
+    }
+}
